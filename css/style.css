@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --orange: #dc780b;
+  --muted: #150c018c;
+  --dark: #150c01;
+
+  --Philosopher: "Philosopher", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.row {
+  flex-direction: row;
+}
+.column {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.nav-items {
+  list-style: none;
+  gap: 15px;
+}
+
+.nav-items li a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.nav-items li a:hover {
+  color: var(--orange);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 30px 0 15px;
+  box-shadow: 0 5px 8px var(--muted);
+}
+
+.main__title {
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.main__title p:first-child {
+  color: var(--orange);
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+
+.main__title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: var(--Philosopher);
+}
+
+.main__title p:last-child{
+    color: var(--muted);
+    font-size: 16px;
+    font-weight: 400;
+    width: 750px;
+    text-align: center;
+    line-height: 24px;
+}
+
+
+.main__cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 60px;
+}
+
+.main__card{
+    width: calc(100% / 3 - 25px);
+    height: auto;
+    border: 2px solid rgba(0, 0, 0, 0.107);
+    border-radius:  90px 16px 16px 16px;
+    overflow: hidden;
+}
+
+.main__card .main__card--img img{
+    width: 100%;
+    border-radius: 90px 0 ;
+}
+
+.main__card .main__content{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.main__card--name--cost{
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__card--name--cost span{
+    font-family: var(--Philosopher);
+}
+
+.main__card--rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.main__card--star{
+    color: var(--orange);
+}
+
+.main__card--star .fa-star:last-child{
+    color: var(--muted);
+}
+
+
+footer{
+    width: 100%;
+    height: 429px;
+    background-color: #252525;
+}
+.nav-btn{
+  width: 155px;
+  height: 46px;
+  background-color: #DC780B;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 300;
+}
+header{
+  width: 100%;
+}
+.header--container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 608px;
+  margin: 0 auto;
+}
+.left__header{
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+.right--header{
+  width: 48%;
+}
+.header--text{
+  font-size: 48.88px;
+  font-weight: 700;
+  font-family: var(--Philosopher);
+}
+.header--p{
+  font-size: 16px;
+  font-weight: 500;
+  color: #150c01b5;
+  font-family: 'Roboto';
+}
+.header--btn{
+  width: 158px;
+  height: 60px;
+  border: none;
+  background-color: #DC780B;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+.header-btn{
+  width: 158px;
+  height: 60px;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  color: #DC780B;
+  font-size: 16px;
+  border: 2px solid #dc770b41;
+  font-weight: 500;
+  margin-left: 28px;
+}
+.bottom-header__btn{
+  padding-top: 8px;
+}
+.features{
+  width: 100%;
+  margin-top: 100px;
+}
+.coantiner--features{
+  width: 80%;
+  height: 358px;
+  margin: auto;
+}
+.features--card{
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.features--img{
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: #e64d2e16;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.features--text{
+  font-size: 25px;
+  font-weight: 700;
+  color: #150c01;
+  font-family: var(--Philosopher);
+}
+.features--p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #150c01d0;
+  text-align: center;
+}
+.features--bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.features--top{
+  text-align: center;
+}
+.feats-text{
+  font-size: 16px;
+  font-weight: 500;
+  color: #DC780B;
+  letter-spacing: 3px;
+}
+.features--h1{
+  font-size: 31.25px;
+  font-weight: 700;
+  color: #150c01;
+  font-family: var(--Philosopher);
+  margin-top: 5px;
+}
+.hero{
+  width: 100%;
+  margin-top: 120px;
+}
+.hero__container{
+  width: 80%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.hero-left {
+  width: 48%;
+  display: flex;
+  align-items: center;
+}
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+.hero-span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #DC780B;
+  letter-spacing: 3px;
+  display: flex;
+  gap: 6px;
+  padding-bottom: 14px;
+}
+.hero-h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #150c01;
+  font-family: var(--Philosopher);
+}
+.hero-p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.629);
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.hero-btn {
+  width: 142px;
+  height: 42px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #DC780B;
+  border-radius: 10px;
+  color: white;
+}
+.main--btn{
+  width: 36px;
+  height: 36px;
+  border: none;
+  background-color: #DC780B;
+  color: white;
+  border-radius: 5px; 
+  font-size: 30px;
+  font-weight: 350;
+}
+.main__btn{
+  width: 142px;
+  height: 42px;
+  border-radius: 5px;
+  background-color: white;
+  border: 2px solid #dc770b34;
+  font-size: 16px;
+  font-weight: 500;
+  color: #DC780B;
+  font-family: 'Roboto';
+  margin: 20px 540px;
+}
+main{
+  margin-top: 160px;
+}
+.test{
+  width: 100%;
+}
+.container--test{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 73px;
+  margin-top: 40px;
+}
+.top--test{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.test--p{
+  text-align: center;
+}
+.test--bottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.test--span{
+  color: #DC780B;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+.test-h1{
+  font-size: 32px;
+  font-weight: 700;
+  font-family: var(--Philosopher);
+}
+.test--p{
+  font-size: 16px;
+  font-weight: 400;
+  color:#000000a2;
+}
+.p-test-text{
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.882);
+  text-align: center;
+}
+.test-img--bottom{
+  margin-bottom: 44px;
+}
+
+.newsletter {
+  width: 100%;
+  background-color: #dc770b1b;
+  margin-top: 112px;
+}
+.container-newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 338px;
+  margin: auto;
+}
+.Newsletter-h1 {
+  font-size: 31.26px;
+  font-weight: 700;
+  color: #150c01;
+  font-family: var(--Philosopher);
+}
+.news-letter__p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #DC780B;
+  letter-spacing: 2.6px;
+  margin-bottom: 10px;
+}
+.newsletter-top {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+form {
+  width: 487px;
+  height: 82px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;  
+  padding-left: 22px;
+  background-color: white;
+}
+input {
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  outline: none;
+  background-color: transparent;
+}
+.custom-btn {
+  width: 150px;
+  height: 82px;
+  background-color: #DC780B;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  color: white; 
+}
+.btn-form{
+  display: flex;
+}
+
+footer{
+  width: 100%;
+  height: 429px;
+  background-color: #252525;
+}
